@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* Базовый опции: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    /* Строгость */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* Если транспилируете с TypeScript: */
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "outDir": "dist",
+    "sourceMap": true,
+
+    /* А если вы собираете для библиотеки: */
+    "declaration": true,
+
+    /* А если вы собираете для библиотеки в монорепо: */
+    "composite": true,
+    "declarationMap": true,
+
+    /* Если ваш код не запускается в DOM: */
+    "lib": ["es2022"],
+
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}
