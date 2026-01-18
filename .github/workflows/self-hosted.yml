@@ -1,0 +1,12 @@
+name: self hosted test
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Hello from self-hosted runner"
+      - run: uname -a
