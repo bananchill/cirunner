@@ -10,3 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: echo "Hello from self-hosted runner"
       - run: uname -a
+  hello:
+    runs-on: [self-hosted, k8s]
+    steps:
+      - run: echo "Hello from Kubernetes runner"
