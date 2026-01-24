@@ -6,7 +6,6 @@ on:
 jobs:
   test:
     runs-on: arc-runner-set
-
     steps:
       - run: |
           echo "hello from k8s"
