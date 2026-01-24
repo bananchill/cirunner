@@ -1,12 +1,14 @@
 name: arc-smoke
 
 on:
-  workflow_dispatch:
+  push:
+  pull_request:
 
 jobs:
   test:
     runs-on: arc-runner-set
     steps:
+      - uses: actions/checkout@v4
       - run: |
           echo "hello from k8s"
           uname -a
