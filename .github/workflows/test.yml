@@ -11,6 +11,6 @@ jobs:
       - run: uname -a
 
   hello:
-    runs-on: arc-runner-ser
+    runs-on: arc-runner-set
     steps:
       - run: echo "Hello from Kubernetes runner"
