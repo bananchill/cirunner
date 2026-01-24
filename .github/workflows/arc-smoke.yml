@@ -1,0 +1,13 @@
+name: arc-smoke
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: arc-runner-set
+
+    steps:
+      - run: |
+          echo "hello from k8s"
+          uname -a
